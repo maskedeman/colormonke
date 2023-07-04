@@ -1,0 +1,137 @@
+h1 {
+  text-align: center;
+}
+
+h1 {
+  color: #000000;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 40px;
+  line-height: 72px;
+  letter-spacing: normal;
+}
+h3.he {
+  color: #7fa64d;
+  text-align: center;
+}
+p.note {
+  font-size: smaller;
+  font-style: italic;
+  position: absolute;
+  top: 100%;
+  right: 0;
+}
+
+.l1,
+.l2,
+.l3,
+.l4 {
+  color: #ca7358 !important;
+}
+div.cb {
+  color: #000000 !important;
+  font-family: "Poppins";
+  background-color: #bdd8db;
+  width: fit-content;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  border-radius: 15px;
+  margin: 10px auto;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
+  position: relative;
+}
+#upd.form-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.button-group {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: -70px;
+}
+
+.button-group button {
+  margin-right: 10px;
+}
+
+.button-group button:last-child {
+  margin-right: 0;
+}
+.btn#canc {
+  color: #257a7a !important;
+
+  background-color: antiquewhite;
+  border-radius: 10px;
+}
+.btn#canc :hover {
+  background-color: #257a7a !important;
+}
+.delb {
+  position: relative;
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+.delb:hover .default-icon {
+  display: none;
+}
+
+.delb:hover::before {
+  display: block;
+  content: "";
+  font-family: "Font Awesome 5 Pro";
+  font-weight: 900;
+  font-size: 1.5rem;
+  color: #ff0000;
+  animation: fa-spin 2s infinite;
+}
+
+@keyframes shake {
+  0% {
+    transform: translateX(0);
+  }
+  10% {
+    transform: translateX(-2px) rotate(0);
+  }
+  20% {
+    transform: translateX(2px) rotate(0);
+  }
+  30% {
+    transform: translateX(-2px) rotate(0);
+  }
+  40% {
+    transform: translateX(2px) rotate(0);
+  }
+  50% {
+    transform: translateX(-2px) rotate(0);
+  }
+  60% {
+    transform: translateX(2px) rotate(0);
+  }
+  70% {
+    transform: translateX(-2px) rotate(0);
+  }
+  80% {
+    transform: translateX(2px) rotate(0);
+  }
+  90% {
+    transform: translateX(-2px) rotate(0);
+  }
+  100% {
+    transform: translateX(0) rotate(0);
+  }
+}
+
+.shake-animation {
+  animation: shake 0.5s ease-in-out;
+}

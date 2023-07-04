@@ -1,0 +1,254 @@
+canvas {
+  max-width: 480px;
+  max-height: 270px;
+}
+
+.color-tiles-container {
+  width: 480px;
+  height: 270px;
+  overflow: auto;
+  position: absolute;
+  top: 44%;
+  left: 1%;
+  scrollbar-width: thin;
+}
+.color-tiles-container::-webkit-scrollbar {
+  width: 1rem;
+  background-color: transparent;
+}
+
+.color-tiles-container::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+.color-tiles-container::-webkit-scrollbar-thumb {
+  background-color: transparent;
+}
+
+.color-tiles-container::-webkit-scrollbar-corner {
+  background-color: transparent;
+}
+
+.color-tiles {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: flex-start;
+  max-height: 100%;
+  padding: 4px;
+}
+
+.color-tiles div {
+  width: 100px;
+  height: 100px;
+  padding: 10px;
+  border: 100px;
+}
+// <!-----------!>caaaaaaaaaaaaaaaaaaaaaaaaaaaa
+.container#c {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 100px;
+  flex-direction: column;
+  font-family: "Poppins";
+  margin-top: -20px;
+}
+h1 {
+  font-weight: bold;
+  font-size: 3rem;
+  letter-spacing: -4.5px;
+}
+span.par {
+  flex: none;
+  text-align: center;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+}
+
+// div.up {
+//   // background: url("../assets/up1.png") transparent 5px 50% no-repeat;
+//   width: 271px;
+//   height: 271px;
+// }
+h6 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  position: relative;
+  margin: auto;
+  display: flex;
+  font-size: 34px;
+  justify-content: center;
+
+  width: 80%;
+}
+.browse {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.bg-light {
+  background-color: transparent !important;
+}
+.alert {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 9999; /* Increase the z-index to make it appear over other elements */
+  width: 300px;
+  background-color: #f8d7da;
+  color: #721c24;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  animation: fadeOut 2s ease-in;
+}
+
+/* Rest of the CSS remains the same */
+
+.alert-message {
+  margin-bottom: 5px;
+}
+
+.alert-close {
+  float: right;
+  cursor: pointer;
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    visibility: hidden;
+    z-index: 2;
+  }
+}
+.home-container {
+  padding: 1rem;
+  overflow-x: hidden;
+}
+
+.counter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  bottom: 180;
+  left: 500;
+}
+
+.counter-button {
+  width: 30px;
+  height: 30px;
+  background-color: steelblue;
+  border: none;
+  border-radius: 4px;
+
+  font-size: 20px;
+  color: #000;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.counter-button:hover {
+  background-color: antiquewhite;
+  color: #257a7a;
+}
+
+.counter-value {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 0 10px;
+}
+.image-container {
+  position: relative;
+  width: 480px;
+  height: 270px;
+
+  overflow: auto;
+  border: 1px solid #ccc;
+}
+
+.image-container img {
+  max-width: 100%;
+  max-height: 100%;
+  display: block;
+  margin: auto;
+}
+body {
+  overflow: hidden;
+}
+.colGrad {
+  background-color: #262a56;
+
+  background: #262a56;
+  background-color: #262a56;
+  background: conic-gradient(
+    #3098c9 16.666%,
+
+    #41644a 33.333%,
+
+    #263a29 50%,
+    #9196cf 66.666%,
+
+    #33b180 83.333%
+  );
+
+  /* Set thee background size and repeat properties. */
+  background-size: 57%;
+  background-repeat: repeat;
+
+  /* Use the text as a mask for the background. */
+  /* This will show the gradient as a text color rather than element bg. */
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  /* Animate the text when loading the element. */
+  /* This animates it on page load and when hovering out. */
+  animation: rainbow-text-animation-rev 0.5s ease forwards;
+}
+.colGrad:hover {
+  animation: rainbow-text-animation 0.5s ease forwards;
+}
+@keyframes rainbow-text-animation {
+  0% {
+    background-size: 57%;
+    background-position: 0 0;
+  }
+  20% {
+    background-size: 57%;
+    background-position: 0 1em;
+  }
+  100% {
+    background-size: 300%;
+    background-position: -9em 1em;
+  }
+}
+
+/* Move the background and make it larger. */
+/* Animation shown when hovering over the text. */
+@keyframes rainbow-text-animation-rev {
+  0% {
+    background-size: 300%;
+    background-position: -9em 1em;
+  }
+  20% {
+    background-size: 57%;
+    background-position: 0 1em;
+  }
+  100% {
+    background-size: 57%;
+    background-position: 0 0;
+  }
+}

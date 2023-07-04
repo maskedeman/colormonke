@@ -1,0 +1,13 @@
+﻿{
+  "connectionString": "",
+  "secret": "",
+  "emailFrom": "info@colors.com",
+  "smtpOptions": {
+    "host": "",
+    "port": "",
+    "auth": {
+      "user": "",
+      "pass": ""
+    }
+  }
+}
